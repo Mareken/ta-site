@@ -1,7 +1,15 @@
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter.ttf');
-}
+/* CSS Reset */
+@import 'base/reset';
 
-@import 'variables';
-@import 'scaffolding';
+/* Variables */
+@import 'base/vars';
+
+/* Partials */
+@import 'partials/header';
+
+body,
+button,
+input,
+textarea {
+  font-family: 'Plus Jakarta Display', Arial, Helvetica, sans-serif;
+}
