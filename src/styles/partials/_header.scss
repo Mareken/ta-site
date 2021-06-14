@@ -8,15 +8,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 60px;
-  background: rgba(255,255,255,.7);
-  border-bottom: rgba(1,163,178,.8);
+  background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(1, 163, 178, 0.08);
 
   &__logo {
     width: 155px;
     height: 25px;
-    background: url("../../images/logo-dark.svg") no-repeat center cover;
   }
 
   &__right-side {
@@ -25,7 +24,7 @@
   }
 
   &__button-search {
-    color: #4F7288;
+    color: #4f7288;
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -42,8 +41,7 @@
     > li {
       a {
         cursor: pointer;
-        color: #4F7288;
-        font-weight: 500;
+        color: #4f7288;
         margin-left: 24px;
         padding: 0 4px;
         text-align: center;

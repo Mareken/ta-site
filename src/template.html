@@ -4,11 +4,34 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Telesapp</title>
+    <link
+      rel="preconnect"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css"
+    />
   </head>
 
   <body>
-    <div id="root"></div>
+    <header class="header">
+      <img class="header__logo" src="./images/logo-dark.svg" />
+      <div class="header__right-side">
+        <button class="header__button-search">
+          <span
+            class="iconify"
+            data-inline="false"
+            data-icon="ic:round-search"
+          ></span>
+        </button>
+        <nav class="header__menu">
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#midiaIndoor">Mídia Indoor</a></li>
+            <li><a href="#balcao">Balcão de Negócios</a></li>
+            <li><a href="#entrar">Entrar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   </body>
 </html>
