@@ -1,0 +1,76 @@
+.section--app-download {
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px !important;
+  }
+
+  .app-download {
+    &__phone-mockup {
+      width: 220px;
+      height: 412px;
+      background: #c4c4c4;
+      border: 10px solid #ffffff;
+      box-shadow: 0px 32px 72px 10px rgba(0, 0, 0, 0.09);
+      border-radius: 19px;
+      margin-right: 32px;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &__content {
+      margin-left: 32px;
+
+      @media screen and (max-width: 768px) {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    &__title {
+      font-size: 36px;
+      font-weight: 700;
+      color: $primary-text;
+    }
+
+    &__about {
+      font-size: 18px;
+      line-height: 27px;
+      color: $secondary-text;
+      margin: 8px 0 32px 0;
+      width: 80%;
+    }
+
+    &__buttons {
+      display: flex;
+      align-items: center;
+
+      .button-app-store,
+      .button-google-play {
+        width: 150px;
+        height: 44px;
+        cursor: pointer;
+      }
+
+      .button-app-store {
+        background: url('../images/app-store.png') no-repeat;
+        margin-right: 16px;
+        background-size: contain;
+        background-position: center;
+      }
+
+      .button-google-play {
+        background: url('../images/google-play.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+}

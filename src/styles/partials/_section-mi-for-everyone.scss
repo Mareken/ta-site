@@ -1,0 +1,65 @@
+.section--mi-for-everyone {
+  > h4 {
+    font-weight: 500;
+    font-size: 24px;
+    color: $secondary-text;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  .mi-for-everyone {
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 48px;
+
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .grid-item {
+        &__title {
+          color: $primary-text;
+          font-size: 32px;
+          font-weight: 700;
+
+          @media screen and (max-width: 768px) {
+            font-size: 24px;
+          }
+        }
+
+        &__description {
+          font-size: 18px;
+          line-height: 27px;
+          color: $secondary-text;
+          margin: 8px 0 16px 0;
+
+          @media screen and (max-width: 768px) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+
+        &__link {
+          display: inline-flex;
+          color: $primary;
+          align-items: center;
+
+          &:hover > svg {
+            transform: translateX(4px) !important;
+          }
+
+          > svg {
+            display: block;
+            transition: all 0.15s ease;
+          }
+        }
+      }
+    }
+  }
+}
