@@ -39,8 +39,8 @@ module.exports = {
     // Generates an HTML file from a template
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     new HtmlWebpackPlugin({
-      title: 'Telesapp',
-      favicon: paths.src + '/images/favicon.svg',
+      title: 'webpack Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
       template: paths.src + '/template.html', // template file
       filename: 'index.html', // output file
     }),
@@ -66,7 +66,6 @@ module.exports = {
 
       // Fonts and SVGs: Inline files
       { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' },
-      { test: /\.html$/, loader: "html-loader" },
     ],
   },
 
