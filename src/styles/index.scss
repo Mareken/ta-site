@@ -50,31 +50,6 @@ body {
   }
 }
 
-.button-goto-top {
-  position: fixed;
-  z-index: 20;
-  bottom: 30px;
-  right: 60px;
-  cursor: pointer;
-  background: #ff7e75;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 2px 5px rgba(255, 126, 117, 0.2);
-  transition: all 0.15s ease;
-  border-radius: 50%;
-
-  @media screen and (max-width: 768px) {
-    right: 20px;
-  }
-
-  &:hover {
-    box-shadow: 0px 2px 8px rgba(255, 126, 117, 0.4);
-  }
-}
-
 .video-modal {
   position: fixed;
   top: 0;
